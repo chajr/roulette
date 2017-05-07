@@ -1,6 +1,6 @@
 package com.company;
 
-import com.oracle.javafx.jmx.json.JSONReader;
+//import com.oracle.javafx.jmx.json.JSONReader;
 
 import java.util.Random;
 
@@ -22,7 +22,7 @@ public class Main {
         {},
         {
             {"0", ""},
-            {"2", "C and "},
+            {"2", " and "},
         },
         {},
         {},
@@ -63,6 +63,7 @@ public class Main {
         for (String[] reRollRule : reRoll[row]) {
             if (Integer.parseInt(reRollRule[0]) == generated) {
                 if (!reRollRule[1].isEmpty()) {
+                    System.out.print(generated); //print original message
                     System.out.print(reRollRule[1]);
                 }
 
