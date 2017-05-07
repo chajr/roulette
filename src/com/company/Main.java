@@ -63,7 +63,7 @@ public class Main {
         for (String[] reRollRule : reRoll[row]) {
             if (Integer.parseInt(reRollRule[0]) == generated) {
                 if (!reRollRule[1].isEmpty()) {
-                    System.out.print(generated); //print original message
+                    System.out.print(list[row][generated]);
                     System.out.print(reRollRule[1]);
                 }
 
